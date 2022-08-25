@@ -1,0 +1,39 @@
+* {
+    color: #ffffff;
+}
+
+h1 {
+    background-color: lightcoral;
+    line-height: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+nav {
+    text-align: center;
+    background-color: darkorange;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+main {
+    padding: 10px;
+    background-color: green;
+}
+
+article {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #374FC7;
+}
+
+footer {
+    font-size: 2rem;
+    background-color: #7048E8;
+    text-align: center;
+}
