@@ -2,17 +2,56 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <title>Accordions</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
+        <style>
+            .container { /* Класс представлен для целей тестирования верстки аккордионов */
+                padding: 1.5rem;
+                width: 730px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            /* класс не относится напрямую к аккордиону, а является лишь часть пользовательского контента, поэтому не лежит в './accordion.css' */
+            .content__item { margin: 0; }
+        </style>
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
+    <div class="container">
+        <details class="accordion">
+            <summary class="accordion__summary">Accordion item 1</summary>
+            <article class="accordion__content">
+                <p class="content__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium autem beatae consequatur deserunt doloremque ducimus eos excepturi facilis impedit iste labore, magni nobis nostrum perspiciatis quibusdam quidem velit veniam.
+                </p>
+                <p class="content__item">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </article>
         </details>
+        <details class="accordion">
+            <summary class="accordion__summary">Accordion item 2</summary>
+            <article class="accordion__content">
+                <span class="content__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum eum inventore laudantium minima modi nesciunt pariatur perspiciatis recusandae veritatis!
+                </span>
+                <blockquote class="content__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis cum dicta incidunt necessitatibus nemo tempore!
+                </blockquote>
+            </article>
+        </details>
+        <details class="accordion">
+            <summary class="accordion__summary">Accordion item 3</summary>
+            <article class="accordion__content">
+                <p class="content__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis expedita iure libero magni sapiente voluptates? Aperiam, beatae, excepturi exercitationem in itaque magnam, magni minima nisi perspiciatis quaerat quam quos ut.
+                </p>
+                <p class="content__item">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti ducimus error fugiat odit porro sed tempora voluptatum! Aperiam molestias porro sapiente. Adipisci atque blanditiis delectus, expedita harum laborum maiores mollitia quidem, rem repellat ut vero. Nemo nesciunt quaerat quis!
+                </p>
+            </article>
+        </details>
+    </div>
     </body>
 </html>

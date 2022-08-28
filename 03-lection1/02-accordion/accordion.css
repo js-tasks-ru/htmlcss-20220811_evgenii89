@@ -1,1 +1,28 @@
 /* Стилизация аккордеона */
+.accordion {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--grey-3);
+
+    padding: 1.5rem 2rem;
+
+    font-family: var(--font-family-inter, var(--font-family-default));
+    line-height: 1.5rem;
+}
+.accordion[open] {
+    padding-bottom: 2rem;
+}
+
+.accordion__summary::-webkit-details-marker { display: none; } /* оставлено для совместимости с chrome */
+.accordion__summary {
+    cursor: pointer;
+    color: var(--black);
+    list-style: none;
+}
+
+.accordion__content {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
