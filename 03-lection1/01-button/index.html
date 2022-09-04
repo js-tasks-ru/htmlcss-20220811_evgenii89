@@ -6,37 +6,42 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="button.css">
         <style>
-            .container { /* Класс представлен для целей тестирования верстки кнопок */
+            /* Классы представлены для целей тестирования верстки кнопок */
+            .container {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 gap: 1rem;
                 padding: 0.5rem;
-                width: 400px
+                width: 190px
+            }
+
+            .container > * {
+                flex-grow: 1;
             }
         </style>
     </head>
     <body>
     <div class="container">
-        <button class="button button_type_primary">
+        <button class="button button_primary">
             Primary
         </button>
         <button disabled
-                class="button button_type_primary">
+                class="button button_primary">
             Primary
         </button>
-        <button class="button button_type_secondary">
+        <button class="button button_secondary">
             Secondary
         </button>
         <button disabled
-                class="button button_type_secondary">
+                class="button button_secondary">
             Secondary
         </button>
-        <button class="button button_type_alternate">
+        <button class="button button_alternate">
             Alternate
         </button>
         <button disabled
-                class="button button_type_alternate">
+                class="button button_alternate">
             Alternate
         </button>
     </div>
