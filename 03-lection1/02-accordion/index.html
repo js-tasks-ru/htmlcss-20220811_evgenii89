@@ -2,17 +2,45 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <title>Accordions</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
+    <div class="accordion">
+        <details class="accordion__item">
+            <summary class="accordion__summary">Accordion item 1</summary>
+            <article class="accordion__content">
+                <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium autem beatae consequatur deserunt doloremque ducimus eos excepturi facilis impedit iste labore, magni nobis nostrum perspiciatis quibusdam quidem velit veniam.
+                </p>
+                <p class="content__text">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </article>
         </details>
+        <details class="accordion__item">
+            <summary class="accordion__summary">Accordion item 2</summary>
+            <article class="accordion__content">
+                <span class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum eum inventore laudantium minima modi nesciunt pariatur perspiciatis recusandae veritatis!
+                </span>
+                <blockquote class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis cum dicta incidunt necessitatibus nemo tempore!
+                </blockquote>
+            </article>
+        </details>
+        <details class="accordion__item">
+            <summary class="accordion__summary">Accordion item 3</summary>
+            <article class="accordion__content">
+                <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis expedita iure libero magni sapiente voluptates? Aperiam, beatae, excepturi exercitationem in itaque magnam, magni minima nisi perspiciatis quaerat quam quos ut.
+                </p>
+                <p class="content__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti ducimus error fugiat odit porro sed tempora voluptatum! Aperiam molestias porro sapiente. Adipisci atque blanditiis delectus, expedita harum laborum maiores mollitia quidem, rem repellat ut vero. Nemo nesciunt quaerat quis!
+                </p>
+            </article>
+        </details>
+    </div>
     </body>
 </html>
