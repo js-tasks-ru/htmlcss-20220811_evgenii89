@@ -21,23 +21,7 @@
     --color-alternate: var(--white);
 
     --color-default: var(--grey-4);
-}
 
-* {
-    /*  Text  */
-    --font-family-default: 'Roboto', sans-serif !important;
-    --font-family-inter: 'Inter', sans-serif !important;
-
-    --font-size-default: 16px;
-
-    font-family: var(--font-family-default);
-    color: var(--color-default);
-    font-style: normal !important;
-    font-size: var(--font-size, var(--font-size-default)) !important;
-    line-height: 16px;
-
-    /*  Borders  */
-    --border-radius-default: 8px;
-
-    border-radius: var(--border-radius, var(--border-radius-default)) !important;
+    --font-family-default: 'Roboto', sans-serif;
+    --font-family-inter: 'Inter', sans-serif;
 }
